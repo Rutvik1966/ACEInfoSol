@@ -1,0 +1,194 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE InfoSol</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/ai.svg' %}">
+    <script src="https://kit.fontawesome.com/f6b2eceeab.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index'%}">
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg
+                    PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#000000"
+                        stroke="none">
+                        <path d="M3508 4167 c-57 -22 -111 -70 -144 -129 -25 -46 -29 -63 -29 -133 0
+-70 4 -87 30 -134 113 -204 413 -181 496 38 48 128 -13 284 -136 349 -41 21
+-170 26 -217 9z" />
+                        <path d="M1812 3419 c-268 -34 -525 -225 -655 -484 -219 -438 -88 -990 298
+-1255 175 -121 421 -173 639 -135 176 30 260 69 352 162 30 31 56 54 58 52 1
+-2 13 -43 26 -91 l23 -88 213 0 214 0 0 900 0 900 -214 0 -213 0 -23 -85 c-13
+-47 -26 -85 -29 -85 -4 0 -23 16 -42 36 -132 139 -388 207 -647 173z m340
+-453 c162 -39 269 -147 313 -316 24 -92 16 -300 -14 -385 -29 -81 -83 -150
+-159 -201 -77 -54 -142 -74 -254 -81 -107 -7 -162 6 -248 57 -109 65 -184 151
+-223 258 -29 80 -35 239 -12 318 48 166 164 292 320 346 61 21 196 23 277 4z" />
+                        <path d="M3350 2480 l0 -900 250 0 250 0 0 900 0 900 -250 0 -250 0 0 -900z" />
+                    </g>
+                </svg>
+
+                ACE InfoSol
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link  dropdown-toggle"  data-bs-toggle="dropdown">  Services  </a>
+                       <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="{% url 'web' %}"> Web Development</a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="{% url 'ecom'%}"> E-Commerce Development </a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="{% url 'digi' %}"> Digital Marketing/Blogging </a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="{%url 'ux' %}"> UI/UX Design </a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="{% url 'dev' %}"> Custom Software development </a></li>
+                       <div class="dropdown-divider"></div>
+                       <li><a class="dropdown-item" href="{% url 'ai' %}"> ML/Ai Based Development </a></li>
+                       </ul>
+                   </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'cu'%}">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'company'%}">Company</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+{% include 'first phase/index.html'%}
+{% include 'secound Phase/index.html'%}
+{% include 'third Phase/index.html'%}
+{% include 'fourth Phase/index.html'%}
+{% include 'fifth phase/index.html' %}
+<footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="www.instagram.com/only_rutvik"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script>
+      AOS.init();
+    document.addEventListener("DOMContentLoaded", function(){
+      // make it as accordion for smaller screens
+      if (window.innerWidth > 992) {
+      
+        document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
+      
+          everyitem.addEventListener('mouseover', function(e){
+      
+            let el_link = this.querySelector('a[data-bs-toggle]');
+      
+            if(el_link != null){
+              let nextEl = el_link.nextElementSibling;
+              el_link.classList.add('show');
+              nextEl.classList.add('show');
+            }
+      
+          });
+          everyitem.addEventListener('mouseleave', function(e){
+            let el_link = this.querySelector('a[data-bs-toggle]');
+      
+            if(el_link != null){
+              let nextEl = el_link.nextElementSibling;
+              el_link.classList.remove('show');
+              nextEl.classList.remove('show');
+            }
+      
+      
+          })
+        });
+      
+      }
+      // end if innerWidth
+      }); 
+  </script>
+</body>
+
+</html>

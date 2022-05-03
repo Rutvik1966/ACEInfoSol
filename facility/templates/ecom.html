@@ -1,0 +1,357 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/ai.svg' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/f6b2eceeab.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    {% include "./nav/index.html"%}
+    <div id="sec1">
+        {% for msg in messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> {{msg}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        {% endfor %}
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h1 id="heading" data-aos="fade-in">E-Commerce</h1>
+                    <hr id="hrhead">
+                    <p id="ptext" data-aos="fade-out">
+                        E-commerce eliminates the need to build physical stores in which products are cataloged. Also, eCommerce stores are accessible from any part of the world over the Internet. As a result, eCommerce stores are more accessible to customers globally and provide a passive experience for commercial activities.
+                    </p>
+                </div>
+                <div class="col">
+                    <div id="cont">
+                        <img src="{% static 'img/ecom.png' %}" id="dashboard" data-aos="zoom-out">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <h1 id="sechead">Advantage of E-Commerce</h1>
+        <hr id="hrsec2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" data-aos="fade-right">
+                    <div id="cont1">
+                        <img src="{% static 'img/trolly.png' %}" id="dashboard1">
+                    </div>
+                </div>
+                <div class="col-sm-8" data-aos="fade-left">
+                    <div id="box1">
+                        <h1 id="heading2" style="color: #ED4F2E;">Lower Cost</h1>
+                        <p id="ptext2" style="color: #746F4A;">
+                            E-Commerce website start in lower cost and make a online store of all things.It a online store that provide coustmer thing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8" data-aos="fade-right">
+                    <div id="box1">
+                        <h1 id="headingright" style="color: #F27932;">Open 24/7</h1>
+                        <p id="ptext2" style="color: #746F4A;">
+                            It a potential income.The E-commerce start 24/7.It attracts the customer from world wide It attracts consumer by large variety of the things and enhance the experenice of online shopping
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3" data-aos="fade-left">
+                    <div id="cont1">
+                        <img src="{% static 'img/dis.png' %}" id="dashboard1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" data-aos="fade-right">
+                    <div id="cont1">
+                        <img src="{% static 'img/bag.png' %}" id="dashboard1">
+                    </div>
+                </div>
+                <div class="col-sm-8" data-aos="fade-left">
+                    <div id="box1">
+                        <h1 id="heading2" style="color:#F27932;">Easily Managable </h1>
+                        <p id="ptext2" style="color: #746F4A;">
+                            Big Advantage of E-Commerce website is not need to hire any employee.You can start the e-commerce buisness be yourself
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8" data-aos="fade-right">
+                    <div id="box1">
+                        <h1 id="headingright" style="color:#F27932">Scalability</h1>
+                        <p id="ptext2" style="color: #746F4A;">
+                            You can scale your buisness of E-Commerce by advertisment on a social media like youtube,facebook instagram.This will helps to grow expontitially. You Can reach the customer world wide.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-3" data-aos="fade-left">
+                    <div id="cont1">
+                        <img src="{% static 'img/card.png' %}" id="dashboard1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <h1 id="sechead">Contact us</h1>
+        <div class="container" data-aos="zoom-out">
+            <div class="row">
+                <div class="col-sm">
+                        <img src="{% static 'img/man.png' %}" id="dashboardcontactus">
+                </div>
+                <div class="col-sm">
+                   <div id="contents">
+                    <h1>
+                        Capture Dream !
+                    </h1>
+                    <h3 >
+                        Be relaxed for your dream website 😇
+                    </h3>
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="email" id="emal" placeholder="Subscribe Us" name="email">
+                        <button type="submit" class="btn btn-outline-success">Success</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+      
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="www.instagram.com/only_rutvik"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Aceinfos.com</a>
+        <!-- Copyright -->
+      </footer>    <style>
+
+        #emal{
+            background-color: #E6E9B4;
+            width: 60%;
+            border-radius: 10px;
+            border: transparent;
+            padding: 2.3%;
+        }
+        #contents{
+            margin-top: 30%;
+        }
+
+        #heading {
+            font-size: 90px;
+            font-family: 'roboto';
+            margin-top: 25%;
+            margin-left: 5%;
+            background: -webkit-linear-gradient(to right, #F7C689 0%, #FF6FBD 100%);
+            background: -moz-linear-gradient(to right, #F7C689 0%, #FF6FBD 100%);
+            background: linear-gradient(to right, #F7C689 0%, #FF6FBD 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #dashboard {
+            height: 250px;
+        }
+
+        #dashboard1 {
+            height: 200px;
+        }
+        #dashboardcontactus {
+            height: 500px;
+        }
+
+        #heading2 {
+            font-family: "roboto";
+            margin-left: 60%;
+        }
+        #headingright {
+            font-family: "roboto";
+            margin-left: 5%;
+        }
+
+        #cont {
+            margin-left: 50%;
+            margin-top: 30%;
+        }
+
+        #cont1 {
+            margin-top: 5%;
+        }
+
+        #ptext {
+            font-size: larger;
+            font-family: 'roboto';
+            margin-left: 5%;
+            color: #746F4A;
+        }
+
+        #ptext2 {
+            font-size: larger;
+            font-family: 'roboto';
+            margin-left: 2%;
+            color: #746F4A;
+        }
+
+        #box1 {
+            margin-top: 10%;
+        }
+
+        #hrhead {
+            width: 100px;
+            margin-left: 5%;
+            height: 10px;
+            color: #FFE779;
+        }
+
+        #sechead {
+            font-size: 70px;
+            text-align: center;
+            font-family: 'roboto';
+            color: #0047D0;
+            opacity: 50%;
+        }
+
+        #hrsec2 {
+            width: 75px;
+            height: 10px;
+            margin-left: 30%;
+            background-color: #F7B57F;
+        }
+
+        @media only screen and (max-width: 960px) {
+            #sec1 {
+                height: auto;
+            }
+
+            #sec2 {
+                height: auto;
+            }
+
+            #heading {
+                font-size: 45px;
+            }
+
+            #sechead {
+                font-size: 35px;
+            }
+
+            #hrsec2 {
+                width: 75px;
+                height: 5px;
+                margin-left: 10%;
+            }
+
+            #dashboard {
+                height: 200px;
+            }
+
+            #dashboard1 {
+                height: 200px;
+            }
+            #dashboardcontactus{
+                height: 200px;
+                margin-left: 25%;
+            }
+
+            #cont {
+                margin-left: 15%;
+                margin-top: 15%;
+                margin-bottom: 5%;
+            }
+
+            #cont1 {
+                margin-left: 15%;
+                margin-top: 15%;
+                margin-bottom: 5%;
+            }
+
+            #heading2 {
+                margin-left: 2%;
+            }
+
+        }
+    </style>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
