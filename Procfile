@@ -1,1 +1,1 @@
-web:gunicorn infoSol.wsgi
+web: gunicorn infoSol.wsgi
